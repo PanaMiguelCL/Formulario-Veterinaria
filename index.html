@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Formulario</title>
+    </head>
+    <body>
+        <section class="formulario">
+            <div class="izquierda">
+                <h2>Medipet</h2>
+                <div class="pet-img">
+                    <img src="img/perro.png" alt="mascota" class="pet-image" />
+                </div>
+            </div>
+
+            <div class="derecha form-container">
+                <h2 class="form-tittle">
+                    Asegurate que tu mascota tenga el mejor cuidado!
+                </h2>
+
+                <div class="form-group txt-input">
+                    <label for="pet-name">Nombre</label>
+                    <input
+                        type="text"
+                        id="pet-name"
+                        placeholder="Nombre mascota"
+                    />
+                </div>
+
+                <div class="photo-upload">
+                    <input
+                        type="file"
+                        id="pet-photo"
+                        accept="image/*"
+                        class="hidden-input"
+                    />
+
+                    <label for="pet-photo" class="photo-trigger">
+                        <div class="photo-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm12 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0zM10 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                                />
+                            </svg>
+                        </div>
+
+                        <span class="photo-text" id="photo-text"
+                            >Sube una foto</span
+                        >
+                    </label>
+                </div>
+
+                <div class="form-group text-input">
+                    <label for="pet-breed">Raza</label>
+                    <input
+                        type="text"
+                        id="pet-breed"
+                        placeholder="Raza de la mascota"
+                    />
+                </div>
+
+                <div class="form-group date-input">
+                    <label for="pet-birthday">Cumpleaños</label>
+                    <input type="date" id="pet-birthday" />
+                </div>
+
+                <div class="form-group selector-group">
+                    <label>Genero</label>
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            class="radio-input"
+                            checked
+                        />
+                        <label for="female" class="radio-btn">Hembra</label>
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            class="radio-input"
+                        />
+                        <label for="male" class="radio-btn">Macho</label>
+                    </div>
+                </div>
+
+                <div class="form-group selector-group">
+                    <label>Esterilizado o Castrado</label>
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="esterilizado"
+                            name="status"
+                            class="radio-input"
+                            checked
+                        />
+                        <label for="esterilizado" class="radio-btn"
+                            >Esterilizado</label
+                        >
+                        <input
+                            type="radio"
+                            id="castrado"
+                            name="status"
+                            class="radio-input"
+                        />
+                        <label for="castrado" class="radio-btn">Castrado</label>
+                    </div>
+                </div>
+
+                <div class="form-group weight-group full-width">
+                    <label>Peso</label>
+                    <div class="radio-option weight-options">
+                        <input
+                            type="radio"
+                            id="w1"
+                            name="weight"
+                            class="radio-input"
+                            checked
+                        />
+                        <label for="w1" class="radio-btn">0-11 Kg</label>
+                        <input
+                            type="radio"
+                            id="w2"
+                            name="weight"
+                            class="radio-input"
+                        />
+                        <label for="w2" class="radio-btn">12-25 Kg</label>
+                        <input
+                            type="radio"
+                            id="w3"
+                            name="weight"
+                            class="radio-input"
+                        />
+                        <label for="w3" class="radio-btn">26-50 Kg</label>
+                        <input
+                            type="radio"
+                            id="w4"
+                            name="weight"
+                            class="radio-input"
+                        />
+                        <label for="w4" class="radio-btn">51+ Kg</label>
+                    </div>
+                </div>
+
+                <div class="form-navegation">
+                    <button type="button" class="btn btn-back">Atras</button>
+                    <button type="button" class="btn btn-next">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
