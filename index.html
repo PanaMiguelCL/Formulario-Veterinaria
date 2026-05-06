@@ -11,6 +11,23 @@
         <title>Formulario</title>
     </head>
     <body>
+
+
+        <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre" required minlength="3" maxlength="50">
+        <input type="text" id="celular"  required pattern="[0-9]{8,12}" placeholder="ej:912345678">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="pais" placeholder="País" required>
+        <input type="text" id="ciudad" placeholder="Ciudad" required>
+        <textarea id="mensaje" placeholder="Escribe tu consulta" required minlength="20">
+                                    Escribe tu consulta</textarea>
+        <button type="submit">Enviar</button>
+</form>
+    <p id="error"></p>
+</section>
+
         <section class="formulario">
             <div class="izquierda">
                 <h2>Medipet</h2>
@@ -19,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="derecha form-container">
+            <form id="pet-form" class="derecha form-container">
                 <h2 class="form-tittle">
                     Asegurate que tu mascota tenga el mejor cuidado!
                 </h2>
@@ -151,11 +168,16 @@
 
                 <div class="form-navegation">
                     <button type="button" class="btn btn-back">Atras</button>
-                    <button type="button" class="btn btn-next">
+                    <button type="submit" class="btn btn-next">
                         Siguiente
                     </button>
                 </div>
-            </div>
+        </section>
+
+        <section id="mapa">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4130798879096!2d-70.60813772345891!3d-33.51664420090668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d18bcbdb78c3%3A0x5cebfb14a24fad52!2sVeterinaria%20Totoro!5e0!3m2!1ses!2scl!4v1778079410117!5m2!1ses!2scl" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <script src="script.js"></script>
